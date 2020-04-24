@@ -12,6 +12,6 @@ Preview: https://htmlpreview.github.io/?https://github.com/breakfastmotorsport/m
 
 ## Technical Aspects
 
-This application does not use external resources. It uses D3.js as a basis for the interactive data visualization.
+This application does not use external resources. It uses [D3.js](https://d3js.org) (© Mike Bostock, [3-Clause BSD License](https://raw.githubusercontent.com/d3/d3/master/LICENSE)) as a basis for the interactive data visualization.
 
 At the moment this application is considered a (working) prototype. There is still some testing and tidying to do.
