@@ -205,8 +205,8 @@ function prepare(fileContent) { // TODO perform sanity check
 
 	document.getElementById("visualization").innerHTML = ""; // clear HTML element
 
-	fileContent = fileContent.replace(/\".*\n/g, ""); // remove lines with a " (first two lines)
-	fileContent = fileContent.replace(/\n\t.*\n/g, "\n"); // remove lines beginning with a tab (third line)
+	fileContent = fileContent.replace(/\".*\n/g, ""); // remove lines with a " (targets the first two lines)
+	fileContent = fileContent.replace(/\n(\t|[^0-9]).*\n/g, "\n"); // remove lines (following and preceding other lines) beginning with a tab or no number (targets the fourth line)
 
 	var data = d3.tsvParse(fileContent, d3.autoType);
 
